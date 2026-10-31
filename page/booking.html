@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markben Booking</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="booking">
+  
+  <div class="booking-form">
+  <h2>Book Your Stay</h2>
+  <form action="form.php" id="bookingForm" method="post">
+    <div class="form-group">
+      <label for="fastname">Fast name:</label>
+      <p> <input type="text" id="firstname" name="firstname" required></p>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last name:</label>
+      <p> <input type="text" id="lastname" name="lastname" required></p>
+    </div>
+    <div class="form-group">
+      <label for="arrivalDate">Arrival Date:</label>
+      <p> <input type="date" id="arrivadate" name="arrivaldate" required></p>
+    </div>
+    <div class="form-group">
+      <label for="departureDate">Departure Date:</label>
+      <p><input type="date" id="departureDate" name="departuredate" required></p> 
+    </div>
+    <div class="form-group">
+      <label for="adults">Number of Adults:</label>
+      <p><input type="number" id="adults" name="adultoptn" min="1" max="6" required></p> 
+    </div>
+    <div class="form-group">
+      <label for="children">Number of Children:</label>
+      <p><input type="number" id="children" name="childrenoptn" min="0" max="8" required></p> 
+    </div>
+    <div class="form-group">
+      <label for="rooms">Number of Rooms:</label>
+      <p><input type="number" id="rooms" name="roomoptn" min="1" max="5" required></p> 
+    </div>
+    <div class="form-group">
+      <label for="room-type">Room package:</label>
+      <select name="roompackage" id="">
+        <option value="">Luxury Suite</option>
+        <option value="">Business Traveler</option>
+        <option value="">Coastal Retreat</option>
+      </select>
+    </div>
+    <button type="submit" id="findRoomButton">Book</button>
+  </form>
+</div>
+
+<script src="script.js"></script> 
+</section>
+</body>
+</html>

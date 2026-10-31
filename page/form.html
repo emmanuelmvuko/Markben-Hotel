@@ -1,0 +1,36 @@
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$arrivaledate = $_POST['arrivaldate'];
+$departuredate = $_POST['departuredate'];
+$adultoptn = $_POST['adultoptn'];
+$childrenoptn = $_POST['childrenoptn'];
+$roomoptn = $_POST['roomoptn'];
+$roompackage = $_POST['roompackage'];
+
+$con = new mysqli("localhost", "root", "", "hotel");
+
+if($con-> connect_error){
+  die("connection failed:". $con-> connect_error);
+}
+
+$sql = "INSERT INTO hotelbooks(firstname, lastname, arrival,
+                     departur, adults, children, rooms, roompackage) 
+              VALUES ('$firstname', '$lastname', '$arrivaledate',
+               '$departuredate', '$adultoptn', '$childrenoptn',
+               '$roomoptn', '$roompackage')";
+$result = $con->query($sql);
+
+if ($result) {
+ 
+  echo "<script>
+          alert('Room booked successfully');
+          window.location.href = 'index.php';
+        </script>";
+} else {
+  
+  echo "Error: " . $sql . "<br>" . $con->error;
+}
+
+$con->close();
+
+?>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markben Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    
+    <section class="home">
+       
+        <div class="welcome">
+           <h1>WELCOME</h1>
+           <P>The Markben Hotel</P>
+           <p class="location">We are a 86-room hotel located in Nyali Mombasa</p>
+        </div>
+        <div class="findroom">
+            <form action="form.html" method="post">
+
+                <p class="bookroom">FIRST NAME</p>
+                <input type="text" id="firstname" name="firstname"
+                placeholder="First name" required>
+
+                <p class="bookroom">LAST NAME</p>
+                <input type="text" id="lastname" name="lastname"
+                placeholder="last name" required>
+
+                <p class="bookroom">ARRIVAL</p>
+                <input type="date" id="arrival" name="arrivaldate" min="2024-03-18" max="2026-12-31" placeholder="arrival" required>
+                
+                <p class="bookroom">DEPARTURE</p>
+                <input type="date" id="Departure" name="departuredate" min="2024-03-18" max="2026-12-31" placeholder="Departure" required>
+
+                <p class="bookroom">ADULTS</p>
+                <select name="adultoptn" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+
+                <p class="bookroom">CHILDREN</p>
+                <select name="childrenoptn" id="">
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                </select>
+
+                <p class="bookroom">ROOMS</p>
+                <select name="roomoptn" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+
+                <p class="bookroom">ROOM PACKAGE</p>
+                <select name="roompackage" id="">
+                    <option value="">Luxury Suite</option>
+                    <option value="">Business Traveler</option>
+                    <option value="">Coastal Retreat</option>
+                  </select>
+                <button class="findroombtn">BOOK</button>
+            </form>
+            
+        </div>
+        <div class="needhelp"><p>Need help? call 0797848559</p></div>
+
+    </section>
+    
+
+    <section class="about">
+        <div class="container-about">
+            <div class="abt">
+                <h3>About Markben hotel</h3>
+                <p>We are a 86-room hotel located at Nyali,<br>
+                     nestled along the pristine shores of Mombasa. <br>
+                      Our seaside retreat beckons travelers with a blend of <br>
+                       coastal charm and modern luxury. <br>
+                    </p>
+    
+                        <a href="about.html" class="abt-button">Read More</a>
+            </div>
+    
+            <div class="about-image">
+                <img src="webbackground.jpg" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="services">
+        <div class="container-services">
+            <div class="services-image">
+                <img src="imgs/sittingroom11.jpg" alt="">
+            </div>
+            <div class="services-image2">
+                <img src="imgs/beachbed.jpg" alt="">
+            </div>
+            <div class="srvc">
+                <h3>Services we offer</h3>
+                <p>Our boutique hotel offers a range of exceptional services <br>
+                     tailored to ensure a memorable stay for every guest. <br>
+                      Relax and rejuvenate with our luxurious accommodations, <br>
+                       featuring elegant furnishings and breathtaking ocean views.
+                    </p>
+                    <a href="service.html" class="srvc-button">Read More</a>
+            </div>
+        </div>
+        <h2>Rooms & Suites</h2>
+        <div class="rooms">
+            
+            <div class="roomimgs">
+                
+                    <img src="imgs/bedroom1a.jpg" alt="">
+                </a>
+                <div class="short-description1" id="short-description1">
+                    <h3>Luxury Suite Package:</h3>
+                    Indulge in unparalleled luxury with our Luxury Suite Package. <br> 
+                    Experience opulent accommodations in our spacious suites, meticulously <br> 
+                    designed to offer the utmost comfort and sophistication.
+                </div>
+                <div class="full-description1" id="full-description1">
+                    <h3>Luxury Suite Package:</h3>
+                    Indulge in unparalleled luxury with our Luxury Suite Package. <br> 
+                    Experience opulent accommodations in our spacious suites, meticulously <br> 
+                    designed to offer the utmost comfort and sophistication. <br> 
+                    Enjoy breathtaking views from your private balcony, unwind in <br> 
+                    a lavish living area, and rejuvenate in a marble-clad bathroom complete <br> 
+                    with luxurious amenities. As a guest of our Luxury Suite Package, <br> 
+                    you'll receive exclusive access to our VIP lounge, personalized concierge service, <br> 
+                    and complimentary breakfast served in-suite or at our upscale restaurant. <br> 
+                    Elevate your stay with additional perks such as champagne upon arrival, <br> 
+                    spa credits, and chauffeured transportation, ensuring a truly unforgettable experience.
+                </div>
+                <button id="read-more1"> <b>Read more</b></button>
+                <button id="read-less1"> <b>Read less</b></button><br>
+                <a href="booking.html" class="book-now"> Book now</a>
+            </div>
+
+            <div class="roomimgs">
+                 
+                    <img src="imgs/bedroom2a.jpg" alt="">
+                </a>
+                <div class="short-description2" id="short-description2">
+                    <h3>Business Traveler Package:</h3>
+                    Experience convenience and comfort with our Business Traveler Package, <br> 
+                    tailored for professionals on the go.
+                </div>
+                <div class="full-description2" id="full-description2">  
+                    <h3>Business Traveler Package:</h3>
+                    Experience convenience and comfort with our Business Traveler Package, <br> 
+                    tailored for professionals on the go. Enjoy a seamless stay in <br>
+                    our executive room equipped with a spacious work desk, high-speed Wi-Fi, <br> 
+                    and complimentary coffee and tea-making facilities. Start your day <br> 
+                    right with a hearty breakfast buffet at our restaurant, offering a variety <br> 
+                    of hot and cold options to fuel your busy schedule. Take advantage of <br> 
+                    our business center facilities, including printing, copying, and <br> 
+                    conference room access, to stay productive during your stay. <br> 
+                    After a long day of meetings, unwind with a complimentary drink at <br> 
+                    our bar or enjoy a relaxing soak in the bathtub before retiring to <br> 
+                    your comfortable bed. Our Business Traveler Package ensures a hassle-free <br> 
+                    and productive stay for discerning professionals.
+                </div>
+                <button id="read-more2"> <b>Read more</b> </button>
+                <button id="read-less2"> <b>Read less</b> </button><br>
+                <a href="booking.html" class="book-now"> Book now</a>
+            </div>
+
+            <div class="roomimgs">
+                
+                    <img src="imgs/bedroom3a.jpg" alt="" id="image">
+                </a>
+                <div class="short-description3" id="short-description3">
+                    <h3>Coastal Retreat Package:</h3>
+                    Immerse yourself in the beauty of Mombasa's coastal <br> 
+                    charm with our Coastal Retreat Package. 
+                    
+                </div>
+
+                <div class="full-description3" id="full-description3">
+                    <h3>Coastal Retreat Package:</h3>
+                    Immerse yourself in the beauty of Mombasa's coastal <br> 
+                    charm with our Coastal Retreat Package.Experience a blissful <br>
+                    getaway in our beachfront resort, nestled along the <br>
+                    shores of the Indian Ocean. Enjoy a two-night stay in our deluxe room, <br> 
+                    offering stunning views of the ocean or lush tropical gardens. <br>
+                    Wake up to the sound of waves gently lapping against the shore and savor <br> 
+                    a delicious breakfast served on our outdoor terrace overlooking the sea. <br> 
+                    Take advantage of complimentary beach access and unwind on pristine white sands <br> 
+                    or indulge in water sports activities such as snorkeling and kayaking. <br> 
+                    In the evenings, treat yourself to a romantic beachfront dinner under the stars, <br> 
+                    featuring fresh seafood and local delicacies. With our Coastal Retreat Package, <br> 
+                    escape to paradise and create unforgettable memories by the sea.
+                </div>
+                
+                <button id="read-more3"> <b>Read more</b> </button>
+                <button id="read-less3"> <b>Read less</b> </button><br>
+                <a href="booking.html" class="book-now"> Book now</a>
+            </div>
+
+        </div>
+
+        <div class="video-container">
+            <video id="fullscreen-video" controls>
+                <img src="imgs/beachview.jpg" alt="Video Placeholder" id="video-placeholder">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="food">
+        <div class="food-container">
+            <div class="foodimg">
+                <img src="imgs/seafood.jpg" alt="food">
+            </div>
+            <div class="food-description">
+                <h3>Enjoy our delicious food</h3>
+                Markben Hotel take pride in offering our guests an exquisite <br> 
+                dining experience filled with an array of delicious flavors and mouthwatering dishes. <br>
+                You will have a taste for our swahili dishes prepared by our professional chefs. <br>
+                This section will show you pictures of our delicious dishes. <br>
+
+                <a href="gallery.html" class="food-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+            <div class="events-head">
+                <h6>#BRIDEANDGROOM</h6>
+                <h2>Weddings & Events</h2>
+            </div>
+
+            <div class="events-container">
+                <div class="package">
+                    <p>Packages</p>
+                    <ul>
+                        <li>Silver $3000</li>
+                        <li>Gold $7000</li>
+                        <li>Platinum $12000</li>
+                    </ul>
+                </div>
+                <div class="events-description">
+                    <h3>Weddings and Celebrations</h3>
+                    <p>Say "I do" in style at Markben Hotel, where fairy tale weddings <br> 
+                        come to life. From intimate ceremonies to grand receptions, <br> 
+                        our elegant ballrooms and picturesque outdoor venues set the stage <br> 
+                        for unforgettable celebrations. Our experienced wedding planners will <br> 
+                        assist you every step of the way, ensuring your special day is everything <br> 
+                        you've dreamed of and more.</p>
+                </div>
+                <div class="eventsimg">
+                    <img src="imgs/weddingimg.jpg" alt="wedding" id="eventsimg1">
+                    <img src="imgs/beachwed.jpg" alt="wedding" id="eventsimg2">
+                </div>
+
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <h4>Get in Touch!</h4>
+            <p>I am thrilled that you want to get in touch with us. <br> 
+                Whether you have a question or just want to say hi,<br>
+                feel free to reach out. I'm here to help! <br>
+                You can drop me an email, give me a call, <br>
+                or connect me on social media. I look forward to hearing from you.</p>
+
+                
+        
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+
+                <input type="text" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
+
