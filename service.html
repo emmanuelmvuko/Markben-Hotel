@@ -1,82 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markben Services</title>
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <section class="servicespg">
+    <header class="site-header">
+        <div class="brand-bar">
+            <a href="index.html" class="brand">The Markben Hotel</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="navbar" id="primary-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html" aria-current="page">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h1>SERVICES OFFERED</h1>
+    <main>
+        <section class="band band-brown" style="padding-bottom:0"><h1 class="page-title" style="margin:0">SERVICES OFFERED</h1></section>
+        <section class="band band-brown">
+            <div class="band-inner">
+                <div class="band-img"><img src="imgs/luxurybed.jpg" alt="Luxurious guest room" loading="lazy"></div>
+                <div><h3>Luxurious Accommodations:</h3><p>Experience unparalleled comfort and relaxation in our spacious and elegantly appointed guest rooms and suites. Each accommodation is meticulously designed to offer a harmonious blend of modern amenities and coastal charm, ensuring a restful stay for every guest.</p></div>
+            </div>
+        </section>
 
-        <div class="servicespg">
-            
-            <div class="servicespg1">
-                <div class="servicespg1-img">
-                    <img src="imgs/luxurybed.jpg" alt="">
-                </div>
-                <div class="servicespg1-description">
-                    <h3>Luxurious Accommodations:</h3> 
-                    Experience unparalleled comfort and relaxation in our spacious and <br> 
-                    elegantly appointed guest rooms and suites. Each accommodation is meticulously <br> 
-                    designed to offer a harmonious blend of modern amenities and coastal charm, <br> 
-                    ensuring a restful stay for every guest.
-                </div>
+        <section class="band band-cream band-reverse">
+            <div class="band-inner">
+                <div><h3>Exquisite Dining:</h3><p>Indulge your palate in a culinary journey like no other at our diverse dining establishments. From sumptuous seafood delicacies to international favorites and authentic Swahili cuisine, our talented chefs craft delectable dishes using the freshest local ingredients, promising a feast for the senses.</p></div>
+                <div class="band-img"><img src="imgs/seafood.jpg" alt="Seafood dish" loading="lazy"></div>
+            </div>
+        </section>
+
+        <section class="band band-brown">
+            <div class="band-inner">
+                <div class="band-img"><img src="imgs/weddingdeco2.jpg" alt="Wedding hall decoration" loading="lazy"></div>
+                <div><h3>Event and Conference Facilities:</h3><p>Host your next event or business gathering in style at our state-of-the-art event and conference facilities. Whether you&rsquo;re planning a corporate meeting, wedding celebration, or social event, our versatile venues and expert event planners ensure seamless execution and unforgettable experiences for you and your guests.</p></div>
+            </div>
+        </section>
+
+        <section class="band band-cream band-reverse">
+            <div class="band-inner">
+                <div><h3>Outdoor Activities and Excursions:</h3><p>Immerse yourself in the natural beauty and adventure of Mombasa with our curated selection of outdoor activities and excursions. From exhilarating water sports and safari adventures to cultural tours and sightseeing, our concierge team is on hand to help you explore the best that the region has to offer.</p></div>
+                <div class="band-img"><img src="imgs/swimming1.jpg" alt="Hotel swimming pool" loading="lazy"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="contact-number">
+                <a class="footer-link" href="mailto:emmanuelmvuko@gmail.com">
+                    <img src="icon/iconemail.png" alt="" width="32" height="32">
+                    <span>emmanuelmvuko@gmail.com</span>
+                </a>
+                <a class="footer-link" href="tel:+254797848559">
+                    <img src="icon/iconcall.png" alt="" width="32" height="32">
+                    <span>+254797848559</span>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://wa.me/254797848559" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="icon/whatsapp.png" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/mvuko%20emmanuel" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="icon/facebook.png" alt="Facebook" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/emmanuel%20mvuko" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="icon/instagram.png" alt="Instagram" width="32" height="32">
+                </a>
+                <a href="https://www.tiktok.com/@Mvuko01" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <img src="icon/tiktok.png" alt="TikTok" width="32" height="32">
+                </a>
             </div>
         </div>
-    </section>
+        <p class="last">Developed by Emmanuel Mvuko &copy; <span class="year">2026</span></p>
+    </footer>
 
-    <section class="servicespg2">
-        <div class="servicespg2-dining">
-            <div class="servicespg2-description">
-                <h3>Exquisite Dining:</h3>
-                Indulge your palate in a culinary journey like no other at our diverse <br> 
-                dining establishments. From sumptuous seafood delicacies to international <br> 
-                favorites and authentic Swahili cuisine, our talented chefs craft delectable <br> 
-                dishes using the freshest local ingredients, promising a feast for the senses.
-            </div>
-            <div class="servicespg2-img">
-                <img src="imgs/seafood.jpg" alt="">
-            </div>
-        </div>
-       
-    </section>
-
-    <section class="servicespg3">
-        <div class="servicespg3-events">
-            <div class="servicespg3-img">
-                <img src="imgs/weddingdeco2.jpg" alt="">
-            </div>
-            <div class="servicespg3-description">
-                <h3>Event and Conference Facilities:</h3>
-                Host your next event or business gathering in style at our state-of-the-art event <br> 
-                and conference facilities. Whether you're planning a corporate meeting, wedding celebration, <br> 
-                or social event, our versatile venues and expert event planners ensure seamless <br> 
-                execution and unforgettable experiences for you and your guests.
-            </div>
-        </div>
-    </section>
-
-    <section class="servicespg4">
-        <div class="servicespg4-swimming">
-            <div class="servicespg4-description">
-                <h3>Outdoor Activities and Excursions:</h3>
-                Immerse yourself in the natural beauty and adventure of Mombasa with our <br> 
-                curated selection of outdoor activities and excursions. From exhilarating water <br> 
-                sports and safari adventures to cultural tours and sightseeing, our concierge team is <br> 
-                on hand to help you explore the best that the region has to offer.
-            </div>
-
-            <div class="servicespg4-img">
-                <img src="imgs/swimming1.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
-

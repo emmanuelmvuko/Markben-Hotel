@@ -1,59 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Markben Booking</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markben Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<section class="booking">
-  
-  <div class="booking-form">
-  <h2>Book Your Stay</h2>
-  <form action="form.php" id="bookingForm" method="post">
-    <div class="form-group">
-      <label for="fastname">Fast name:</label>
-      <p> <input type="text" id="firstname" name="firstname" required></p>
-    </div>
-    <div class="form-group">
-      <label for="lastname">Last name:</label>
-      <p> <input type="text" id="lastname" name="lastname" required></p>
-    </div>
-    <div class="form-group">
-      <label for="arrivalDate">Arrival Date:</label>
-      <p> <input type="date" id="arrivadate" name="arrivaldate" required></p>
-    </div>
-    <div class="form-group">
-      <label for="departureDate">Departure Date:</label>
-      <p><input type="date" id="departureDate" name="departuredate" required></p> 
-    </div>
-    <div class="form-group">
-      <label for="adults">Number of Adults:</label>
-      <p><input type="number" id="adults" name="adultoptn" min="1" max="6" required></p> 
-    </div>
-    <div class="form-group">
-      <label for="children">Number of Children:</label>
-      <p><input type="number" id="children" name="childrenoptn" min="0" max="8" required></p> 
-    </div>
-    <div class="form-group">
-      <label for="rooms">Number of Rooms:</label>
-      <p><input type="number" id="rooms" name="roomoptn" min="1" max="5" required></p> 
-    </div>
-    <div class="form-group">
-      <label for="room-type">Room package:</label>
-      <select name="roompackage" id="">
-        <option value="">Luxury Suite</option>
-        <option value="">Business Traveler</option>
-        <option value="">Coastal Retreat</option>
-      </select>
-    </div>
-    <button type="submit" id="findRoomButton">Book</button>
-  </form>
-</div>
+    <header class="site-header">
+        <div class="brand-bar">
+            <a href="index.html" class="brand">The Markben Hotel</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="navbar" id="primary-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html" aria-current="page">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<script src="script.js"></script> 
-</section>
+    <main>
+        <section class="booking">
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+                <form action="form.php" id="bookingForm" method="post" data-booking>
+                    <div class="field">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="arrivalDate">Arrival date</label>
+                        <input type="date" id="arrivalDate" name="arrivaldate" required>
+                    </div>
+                    <div class="field">
+                        <label for="departureDate">Departure date</label>
+                        <input type="date" id="departureDate" name="departuredate" required>
+                    </div>
+                    <div class="field">
+                        <label for="adults">Number of adults</label>
+                        <input type="number" id="adults" name="adultoptn" min="1" max="6" value="1" inputmode="numeric" required>
+                    </div>
+                    <div class="field">
+                        <label for="children">Number of children</label>
+                        <input type="number" id="children" name="childrenoptn" min="0" max="8" value="0" inputmode="numeric" required>
+                    </div>
+                    <div class="field">
+                        <label for="rooms">Number of rooms</label>
+                        <input type="number" id="rooms" name="roomoptn" min="1" max="6" value="1" inputmode="numeric" required>
+                    </div>
+                    <div class="field">
+                        <label for="roompackage">Room package</label>
+                        <select id="roompackage" name="roompackage">
+                        <option value="Luxury Suite">Luxury Suite</option>
+                        <option value="Business Traveler">Business Traveler</option>
+                        <option value="Coastal Retreat">Coastal Retreat</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="findRoomButton">Book</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="contact-number">
+                <a class="footer-link" href="mailto:emmanuelmvuko@gmail.com">
+                    <img src="icon/iconemail.png" alt="" width="32" height="32">
+                    <span>emmanuelmvuko@gmail.com</span>
+                </a>
+                <a class="footer-link" href="tel:+254797848559">
+                    <img src="icon/iconcall.png" alt="" width="32" height="32">
+                    <span>+254797848559</span>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://wa.me/254797848559" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="icon/whatsapp.png" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/mvuko%20emmanuel" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="icon/facebook.png" alt="Facebook" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/emmanuel%20mvuko" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="icon/instagram.png" alt="Instagram" width="32" height="32">
+                </a>
+                <a href="https://www.tiktok.com/@Mvuko01" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <img src="icon/tiktok.png" alt="TikTok" width="32" height="32">
+                </a>
+            </div>
+        </div>
+        <p class="last">Developed by Emmanuel Mvuko &copy; <span class="year">2026</span></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

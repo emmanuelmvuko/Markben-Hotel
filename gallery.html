@@ -1,82 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markben Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <section class="gallerypg">
+    <header class="site-header">
+        <div class="brand-bar">
+            <a href="index.html" class="brand">The Markben Hotel</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="navbar" id="primary-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h1>Our Gallery</h1>
-        <div class="gallerypg-view">
-            <div class="gallerypg-viewimg">
-                <img src="imgs/hotelview3.jpg" alt="">
+    <main>
+        <section class="gallery gallery-cream">
+            <h1>Our Gallery</h1>
+            <div class="gallery-grid">
+                <img src="imgs/hotelview3.jpg" alt="Hotel exterior view" loading="lazy">
+                <img src="imgs/hotelview4.jpg" alt="Hotel grounds and gardens" loading="lazy">
+                <img src="imgs/swimmingpool.jpg" alt="Hotel swimming pool" loading="lazy">
             </div>
+        </section>
 
-            <div class="gallerypg-viewimg">
-                <img src="imgs/hotelview4.jpg" alt="">
+        <section class="gallery gallery-brown">
+            <h2>Our Rooms</h2>
+            <div class="gallery-grid">
+                <img src="imgs/bedroom1a.jpg" alt="Luxury suite bedroom" loading="lazy">
+                <img src="imgs/bedroom2a.jpg" alt="Business traveler room" loading="lazy">
+                <img src="imgs/bedroom3a.jpg" alt="Coastal retreat room" loading="lazy">
             </div>
+        </section>
 
-            <div class="gallerypg-viewimg">
-                <img src="imgs/swimmingpool.jpg" alt="">
+        <section class="gallery gallery-cream">
+            <h2>Our Dishes</h2>
+            <div class="gallery-grid">
+                <img src="imgs/food1.jpg" alt="Swahili dish" loading="lazy">
+                <img src="imgs/food2.jpg" alt="Seafood platter" loading="lazy">
+                <img src="imgs/food3.jpg" alt="Chef&rsquo;s special dish" loading="lazy">
+            </div>
+        </section>
+
+        <section class="gallery gallery-brown">
+            <h2>Our Wedding Decorations</h2>
+            <div class="gallery-grid">
+                <img src="imgs/weddingdeco1.jpg" alt="Wedding decoration" loading="lazy">
+                <img src="imgs/weddingdeco2.jpg" alt="Wedding hall decoration" loading="lazy">
+                <img src="imgs/weddingdeco3.jpg" alt="Wedding table setting" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="contact-number">
+                <a class="footer-link" href="mailto:emmanuelmvuko@gmail.com">
+                    <img src="icon/iconemail.png" alt="" width="32" height="32">
+                    <span>emmanuelmvuko@gmail.com</span>
+                </a>
+                <a class="footer-link" href="tel:+254797848559">
+                    <img src="icon/iconcall.png" alt="" width="32" height="32">
+                    <span>+254797848559</span>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://wa.me/254797848559" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="icon/whatsapp.png" alt="WhatsApp" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/mvuko%20emmanuel" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="icon/facebook.png" alt="Facebook" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/emmanuel%20mvuko" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="icon/instagram.png" alt="Instagram" width="32" height="32">
+                </a>
+                <a href="https://www.tiktok.com/@Mvuko01" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <img src="icon/tiktok.png" alt="TikTok" width="32" height="32">
+                </a>
             </div>
         </div>
-    </section>
-    <section class="gallerypg-room">
-        <h1>Our Rooms</h1>
-        <div class="gallerypg-view">
-            <div class="gallerypg-roomimg">
-                <img src="imgs/bedroom1a.jpg" alt="">
-            </div>
+        <p class="last">Developed by Emmanuel Mvuko &copy; <span class="year">2026</span></p>
+    </footer>
 
-            <div class="gallerypg-roomimg">
-                <img src="imgs/bedroom2a.jpg" alt="">
-            </div>
-
-            <div class="gallerypg-roomimg">
-                <img src="imgs/bedroom3a.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="gallerypg-food">
-        <h1>Our Dishes</h1>
-        <div class="gallerypg-view">
-            <div class="gallerypg-foodimg">
-                <img src="imgs/food1.jpg" alt="">
-            </div>
-
-            <div class="gallerypg-foodimg">
-                <img src="imgs/food2.jpg" alt="">
-            </div>
-
-            <div class="gallerypg-foodimg">
-                <img src="imgs/food3.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="gallerypg-wed">
-        <h1>Our Wedding Decorations</h1>
-        <div class="gallerypg-view">
-            <div class="gallerypg-wedimg">
-                <img src="imgs/weddingdeco1.jpg" alt="">
-            </div>
-
-            <div class="gallerypg-wedimg">
-                <img src="imgs/weddingdeco2.jpg" alt="">
-            </div>
-
-            <div class="gallerypg-wedimg">
-                <img src="imgs/weddingdeco3.jpg" alt="">
-            </div>
-        </div>
-    </section>
-   
+    <script src="script.js"></script>
 </body>
 </html>
-
